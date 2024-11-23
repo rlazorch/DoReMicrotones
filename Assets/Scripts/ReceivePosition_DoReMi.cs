@@ -5,7 +5,7 @@ using System;
 public class ReceivePosition_DoReMi : MonoBehaviour {
     
    	public OSC osc;
-
+    public int transpose = 12;
 
 	// Use this for initialization
 	void Start () {
@@ -21,7 +21,7 @@ public class ReceivePosition_DoReMi : MonoBehaviour {
         float y = message.GetFloat(0);
         if (y > 0) {
             Vector3 position = transform.position;
-            float tmp = (y - 48) / 2.0f + 1;
+            float tmp = (y - 45 - transpose) / 2.0f;
             if (tmp < 0) {
                 tmp = 0;
             }
@@ -33,7 +33,7 @@ public class ReceivePosition_DoReMi : MonoBehaviour {
 
     void BallSpeed(OscMessage message) {
         float force = message.GetFloat(0);
-        gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, force));        
+        gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, force));
         //Debug.Log("Received! " + force);
     }
 }
