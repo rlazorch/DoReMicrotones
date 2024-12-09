@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/DoReMi.unity
+    guid: b0795482a6fde4361be304141efe4527
+  - enabled: 1
+    path: Assets/Scenes/Fight.unity
+    guid: 67942f5531de14d599de46079dac3686
   m_configObjects: {}

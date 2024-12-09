@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.SceneManagement;
 
 public class ReceivePosition_DoReMi : MonoBehaviour {
     
    	public OSC osc;
     public int transpose = 12;
-
-	// Use this for initialization
+    public GameController gameController;
 	void Start () {
        osc.SetAddressHandler("/CubeY", OnReceiveY);
        osc.SetAddressHandler("/BallSpeed", BallSpeed);
@@ -15,7 +15,9 @@ public class ReceivePosition_DoReMi : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if (transform.position.z > gameController.pillarGap * gameController.names.Length) {
+            SceneManager.LoadScene("Fight", LoadSceneMode.Single);
+        }
 	}
 	    void OnReceiveY(OscMessage message) {
         float y = message.GetFloat(0);
