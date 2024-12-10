@@ -157,7 +157,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179970758}
   serializedVersion: 4
-  m_Mass: 0.2
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   osc: {fileID: 490370259}
-  transpose: 0
+  transpose: -12
   gameController: {fileID: 2017772548}
 --- !u!135 &179970761
 SphereCollider:
@@ -271,7 +271,7 @@ Transform:
   m_GameObject: {fileID: 179970758}
   serializedVersion: 2
   m_LocalRotation: {x: 0.040299077, y: -0.3823192, z: 0.016692424, w: 0.9230003}
-  m_LocalPosition: {x: 0, y: 0, z: -8}
+  m_LocalPosition: {x: 0, y: 0, z: -40}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -605,15 +605,17 @@ MonoBehaviour:
   - Do
   - Re
   - Mi
-  - Fa
+  - Do
   - Sol
+  - Mi
   pitches:
   - 0
   - 2
   - 4
-  - 5
+  - 0
   - 7
-  pillarGap: 8
+  - 4
+  pillarGap: 30
   ball: {fileID: 179970758}
   ballSize: 0.7
 --- !u!4 &2017772549

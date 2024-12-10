@@ -1227,6 +1227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa17a397984834fe78199167133a94be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  osc: {fileID: 2120033399}
 --- !u!114 &353746185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6782,7 +6783,7 @@ MonoBehaviour:
   supertrack: {fileID: 0}
   death: {fileID: 8300000, guid: 827bd1fc7d5d24cfbbb20b9e4caa9358, type: 3}
   subtracks:
-  - {fileID: 8300000, guid: 6c6d2abb87e8b4b17875cf93158e0ced, type: 3}
+  - {fileID: 0}
   defaultVolume: 0.4
   snapshots:
   - {fileID: 24500006, guid: 07fbc9a4fd01f474cbc0b18a9b10119d, type: 2}
